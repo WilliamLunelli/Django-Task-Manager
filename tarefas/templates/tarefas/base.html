@@ -1,0 +1,23 @@
+{%load static%}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{%block title%}{%endblock%} - b7-tarefas</title>
+    <link rel="stylesheet" href="{%static 'css/style.css'%}">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">~/<span class="highlight">b7-tarefas</span></h1>
+        <p class="date">a sua lista de tarefas dev</p>
+
+        {%block body%}
+        {%endblock%}
+    </div>
+</body>
+
+</html>

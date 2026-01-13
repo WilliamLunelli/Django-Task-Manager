@@ -1,0 +1,147 @@
+:root {
+    --primary-color: #16b1f9;
+    --secondary-color: #1f2937;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', monospace;
+    background-color: #0f111a;
+    color: #d1d5db;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 50px;
+}
+
+.container {
+    width: 400px;
+    padding: 20px;
+}
+
+.title {
+    font-size: 24px;
+    color: #d1d5db;
+}
+
+.highlight {
+    color: var(--primary-color);
+    /* orange-500 */
+}
+
+.date {
+    color: #6b7280;
+    /* gray-500 */
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.progress-container {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.progress-container label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.progress-bar {
+    background-color: var(--secondary-color);
+    border-radius: 4px;
+    height: 6px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.progress {
+    background-color: var(--primary-color);
+    height: 100%;
+    transition: width 0.3s ease;
+}
+
+.progress-count {
+    text-align: right;
+    font-size: 12px;
+    color: #9ca3af;
+    margin-top: 4px;
+}
+
+.task-form {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+    background-color: var(--secondary-color);
+    padding: 10px;
+    border-radius: 9px;
+    border: 2px solid #344051;
+}
+
+.task-form input {
+    flex: 1;
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    color: #d1d5db;
+    font-size: 16px;
+    outline: none;
+}
+
+.task-form button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task-list li {
+    display: flex;
+    align-items: center;
+    background-color: var(--secondary-color);
+    margin-bottom: 10px;
+    justify-content: space-between;
+    color: var(--primary-color);
+    padding: 10px;
+    border-radius: 9px;
+    border: 2px solid #344051;
+}
+
+.task-list li input[type="checkbox"] {
+    margin-right: 10px;
+    accent-color: var(--primary-color);
+}
+
+.task-list li span {
+    flex: 1;
+    font-size: 16px;
+}
+
+.task-list li.completed {
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
+.task-list .delete {
+    text-decoration: none;
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    font-size: 18px;
+}
+
+.footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #6b7280;
+}
